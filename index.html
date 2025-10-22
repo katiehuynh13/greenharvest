@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenHarvest Organics | Fresh Organic Fruits & Vegetables</title>
+  <meta name="description" content="Farm-fresh organic fruits and vegetables delivered from local farms to your table. Sustainable, seasonal, and naturally grown produce you can trust." />
+  <meta name="keywords" content="organic fruits, fresh vegetables, sustainable produce, farm to table, local organic food" />
+  <meta name="author" content="GreenHarvest Organics" />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="GreenHarvest Organics" />
+  <meta property="og:description" content="Sustainable, organic fruits and vegetables delivered fresh from the farm to your table." />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // Replace with your GA4 Measurement ID
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">GreenHarvest Organics</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Fresh From the Farm to Your Table</h1>
+        <p>Locally grown organic fruits and vegetables — sustainable, seasonal, and delicious.</p>
+        <a href="#shop" class="btn-cta">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/img/hero-basket.webp" alt="Basket of organic fruits and vegetables" />
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <h2>Our Farm-to-Table Story</h2>
+      <video controls poster="assets/img/farm-poster.jpg" aria-label="GreenHarvest Farm to Table Video">
+        <source src="assets/video/farm-to-table.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p class="ai-credit">Video generated with Runway AI, edited and optimized for web.</p>
+    </section>
+
+    <!-- Product Highlights -->
+    <section id="shop" class="products">
+      <h2>Our Organic Produce</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="assets/img/apples.webp" alt="Fresh organic apples" />
+          <h3>Organic Apples</h3>
+          <p>Sweet, crisp, and pesticide-free. Perfect for healthy snacking.</p>
+        </div>
+        <div class="product-card">
+          <img src="assets/img/carrots.webp" alt="Fresh organic carrots" />
+          <h3>Organic Carrots</h3>
+          <p>Crunchy and packed with nutrients from local soil.</p>
+        </div>
+        <div class="product-card">
+          <img src="assets/img/greens.webp" alt="Fresh leafy greens" />
+          <h3>Leafy Greens</h3>
+          <p>Fresh spinach, kale, and lettuce harvested sustainably.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn-cta">Get Weekly Box</a>
+    </section>
+
+    <!-- SCI Principle Section -->
+    <section class="sci-section">
+      <h2>Inspired by the Science of Creative Intelligence</h2>
+      <p>We apply the principle of <strong>Harmony in Diversity</strong>—bringing together technology, nature, and human values to create a balanced ecosystem for sustainable living.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@greenharvest.com">info@greenharvest.com</a></p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <p>Follow us on:
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenHarvest Organics. All rights reserved.</p>
+    <p class="ai-credit">Images created with Canva AI | Text refined using ChatGPT | Video created with Runway AI.</p>
+  </footer>
+
+  <style>
+    /* Inline minimal styling – move to styles.css in production */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    .navbar {
+      background: #3a7a3a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-color: #f5f5f5;
+    }
+    .hero-text {
+      max-width: 500px;
+      margin-right: 2rem;
+    }
+    .hero-image img {
+      max-width: 400px;
+      border-radius: 12px;
+    }
+    .btn-cta {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #3a7a3a;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-cta:hover {
+      background: #2f622f;
+    }
+    .video-section, .products, .contact, .sci-section {
+      text-align: center;
+      padding: 2rem;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      padding: 1rem;
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-text { margin: 0; }
+    }
+  </style>
+</body>
+</html>
