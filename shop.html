@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | GreenHarvest Organics</title>
+  <meta name="description" content="Sign up for early access to seasonal boxes and contact GreenHarvest Organics for wholesale or partnership inquiries." />
+  <meta name="keywords" content="organic food shop, newsletter signup, wholesale produce, farm to table" />
+  <meta name="author" content="GreenHarvest Organics" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shop | GreenHarvest Organics" />
+  <meta property="og:description" content="Join our mailing list and contact our team about wholesale or partnerships." />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); /* Replace with your GA4 Measurement ID */
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">GreenHarvest Organics</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <main>
+    <section class="shop-header">
+      <h1>Contact &amp; Sign Up</h1>
+    </section>
+
+    <!-- Two-card grid -->
+    <section class="shop-grid container">
+      <!-- Left: Sign Up -->
+      <article class="card">
+        <h2>Sign up for early access</h2>
+        <p>Join our mailing list for seasonal box alerts, farm stories, recipes, and sustainability tips.</p>
+
+        <!-- Newsletter form (Formspree example) -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="signup-form" aria-label="Newsletter sign up form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Enter your name" />
+
+          <label for="email">Email</label>
+          <input id="email" name="_replyto" type="email" required placeholder="Enter your email" />
+
+          <!-- Optional: consent checkbox -->
+          <label class="checkbox">
+            <input type="checkbox" name="consent" required />
+            I agree to receive emails from GreenHarvest and accept the privacy policy.
+          </label>
+
+          <button type="submit" class="btn-cta">Sign Up</button>
+        </form>
+      </article>
+
+      <!-- Right: Store & Support -->
+      <aside class="card">
+        <h2>Store &amp; Support</h2>
+        <p>For wholesale or partnership inquiries, email
+          <a href="mailto:hello@greenharvest.example">hello@greenharvest.example</a>.
+        </p>
+
+        <p><strong>Pickup & Delivery:</strong><br/>
+          • Local pickup: Tue & Fri, 3–6 PM<br/>
+          • Home delivery: Wed & Sat (within 10 miles)
+        </p>
+
+        <p><strong>Attribution:</strong> Hero visuals edited with Canva AI; sample video concept generated with Runway; copy refined with ChatGPT.</p>
+
+        <hr class="divider" aria-hidden="true" />
+
+        <h3>Popular Boxes</h3>
+        <ul class="list">
+          <li>Weekly Fruit Box — 6–8 seasonal items</li>
+          <li>Veggie Essentials — carrots, greens, onions & more</li>
+          <li>Family Salad Kit — kid-friendly mix with dressings</li>
+        </ul>
+
+        <a href="index.html#shop" class="btn-cta secondary">Back to Products</a>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GreenHarvest Organics. All rights reserved.</p>
+    <p class="ai-credit">Images created with Canva AI | Text refined using ChatGPT | Analytics via GA4.</p>
+  </footer>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* Layout shell */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+    .shop-header {
+      padding: 2.25rem 1.25rem 1rem;
+    }
+    .shop-header h1 {
+      font-size: 2rem;
+    }
+
+    /* Grid like screenshot: 2 equal cards with soft shadow & rounded corners */
+    .shop-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 1.25rem 1.25rem 1.5rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border: 1px solid #f0f0f0;
+    }
+    .card h2 {
+      margin-bottom: 0.5rem;
+    }
+    .divider {
+      border: 0;
+      border-top: 1px solid #eee;
+      margin: 1rem 0 1rem;
+    }
+    .list {
+      margin: 0.25rem 0 1rem 1rem;
+    }
+
+    /* Form visuals (rounded inputs, soft borders) */
+    .signup-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+      margin-top: 0.75rem;
+      max-width: 520px;
+    }
+    .signup-form label {
+      font-weight: 600;
+    }
+    .signup-form input[type="text"],
+    .signup-form input[type="email"] {
+      padding: 0.85rem 0.9rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color .2s ease, box-shadow .2s ease;
+      background: #fff;
+    }
+    .signup-form input:focus {
+      outline: none;
+      border-color: #3a7a3a;
+      box-shadow: 0 0 0 3px rgba(58,122,58,0.15);
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.95rem;
+    }
+
+    /* Buttons */
+    .btn-cta.secondary {
+      background: transparent;
+      color: #3a7a3a;
+      border: 2px solid #3a7a3a;
+    }
+    .btn-cta.secondary:hover {
+      background: #3a7a3a;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .shop-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</body>
+</html>
